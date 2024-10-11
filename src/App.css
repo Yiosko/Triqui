@@ -1,0 +1,68 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.square{
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #000000;
+  display: inline-block;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.board-row {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  gap: 5px;
+}
+
+.Squit {
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+}
+
+.seleccionado {
+  border: 3px solid #fa7e7ede;
+  border-radius: 20px;
+}
+
+.winner {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+
+.winner .text {
+  background-color: #363434;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 340px;
+  height: 300px;
+}
+
+.buttonReset {
+  padding: 30px;
+  color: gray;
+  margin-top: 40px;
+}
+
+.buttonReset:hover {
+  border: 1px solid #fff;
+}
+
+.winner .Squit {
+  border: 2px solid #fa7e7ede;
+}
